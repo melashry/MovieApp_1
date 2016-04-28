@@ -1,7 +1,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:id="@+id/container"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.engelashry.movieapp.DetailActivityFragment"
     tools:showIn="@layout/activity_detail">
@@ -16,6 +16,7 @@
 
 
     <TextView
+        android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
@@ -23,8 +24,7 @@
         android:padding="16dp"
         android:textColor="#424242"
         android:textSize="24sp"
-        android:textStyle="bold"
-        android:id="@+id/title"/>
+        android:textStyle="bold" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -67,27 +67,41 @@
 
                 />
             <Button
+                android:id="@+id/favruite"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/favruite"
                 android:background="@color/colorAccent"
-                android:textStyle="bold"
-                android:textColor="#fff"
                 android:text="favruite"
+                android:textColor="#fff"
+                android:textStyle="bold"
               />
         </LinearLayout>
     </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
     <TextView
+        android:id="@+id/txt4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txt4"
         android:textStyle="bold"
 
         />
         <GridView
             android:id="@+id/trailer_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></GridView>
+            android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/review"
+                style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#666"
+                android:textColor="#fff" />
+        </LinearLayout>
 
 
     </LinearLayout>
